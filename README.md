@@ -12,7 +12,8 @@ Below are the step to use PHPEXCEL("https://phpexcel.codeplex.com") with laravel
 3:- Then execute "composer update".
 
 4:- Open the file "/vendor/composer/autoload_namespaces.php". Paste the below line in the file. <br />
-    'PHPExcel' => array($vendorDir . '/phpoffice/phpexcel/src'),
+        // Include PHPEXCEL Library with Laravel 5
+    'PHPExcel' => array($vendorDir . '/phpoffice/phpexcel/Classes'),
 
 5:- Now you can use PHPEXCEL library in your controllers or middleware or library.<br />
     use PHPExcel; <br />
